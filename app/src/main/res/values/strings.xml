@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">SmartCalculator</string>
+    <string-array name="operations_array">
+        <item>Plus</item>
+        <item>Minus</item>
+        <item>Divide</item>
+        <item>Multiply</item>
+        <item>Apply</item>
+    </string-array>
+</resources>

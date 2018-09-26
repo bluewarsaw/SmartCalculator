@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <!--<LinearLayout-->
+        <!--android:orientation="vertical"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+
+
+<!--&lt;!&ndash;USER INPUT&ndash;&gt;-->
+
+        <!--<TextView-->
+            <!--android:text="Hi! You can type in up to 5 commands with numebrs"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content" />-->
+
+        <!--<TextView-->
+            <!--android:text="Avaible commands: divide, multiply, apply, sum"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content" />-->
+
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal">-->
+
+<!--<EditText-->
+    <!--android:id="@+id/user_input"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:lines="8"-->
+    <!--android:hint="Type here"-->
+    <!--android:textAllCaps="true"/>-->
+
+            <!--<Button-->
+                <!--android:id="@+id/send_input"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="CALCULATE"/>-->
+
+            <!--<Button-->
+                <!--android:id="@+id/reset_input"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="RESET"/>-->
+
+
+        <!--</LinearLayout>-->
+<!--&lt;!&ndash;END USER INPUT&ndash;&gt;-->
+
+
+
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/doing"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text=""/>-->
+
+            <!--<TextView-->
+                <!--android:layout_marginEnd="10dp"-->
+                <!--android:layout_marginRight="10dp"-->
+                <!--android:id="@+id/output"-->
+                <!--android:textSize="40dp"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content" />-->
+        <!--</LinearLayout>-->
+
+
+
+
+
+    <!--</LinearLayout>-->
+
+
+
+
+    <!--WIZYTÓWKA-->
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/android_guy"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@drawable/android_guy"/>
+
+    <TextView
+        android:id="@+id/hello"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hello"
+        android:textSize="20dp"
+        android:layout_alignParentTop="true"
+        android:alpha=".9"
+        android:layout_marginTop="45dp"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+
+
+
+        <!--<AutoCompleteTextView-->
+            <!--android:id="@+id/autocomplete_operations"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content" />-->
+
+
+
+        <EditText
+            android:inputType="textCapWords"
+            android:textAllCaps="true"
+            android:id="@+id/user_input"
+            android:layout_centerHorizontal="true"
+            android:layout_width="250dp"
+            android:layout_height="80dp"
+            android:alpha=".97"
+            android:layout_margin="100dp"
+            android:background="@drawable/back4"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/fonts"/>
+
+        <Button
+            android:id="@+id/send_input"
+            android:layout_below="@id/user_input"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha=".97"
+            android:background="@drawable/back4"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:text="CALCULATE"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/fonts" />
+
+
+
+        <Button
+            android:id="@+id/reset_input"
+            android:layout_below="@id/send_input"
+            android:layout_marginTop="16dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha=".92"
+            android:background="@drawable/back2"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:text="Reset"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/red"
+            android:fontFamily="@font/fonts"
+            />
+
+        <TextView
+            android:id="@+id/output"
+            android:layout_below="@id/reset_input"
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha=".87"
+            android:background="@drawable/back3"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:text="Your answer will appear here"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/blue"
+            android:fontFamily="@font/fonts"/>
+
+
+        <TextView
+            android:id="@+id/doing"
+            android:layout_below="@id/output"
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha=".87"
+            android:background="@drawable/back3"
+            android:text=""
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/blue"
+            android:fontFamily="@font/fonts"/>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
